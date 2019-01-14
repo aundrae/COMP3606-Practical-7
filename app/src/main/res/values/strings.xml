@@ -37,4 +37,7 @@
     <string name="first_name">First Name</string>
     <string name="last_name">ID #</string>
     <string name="orders">Orders</string>
+    <string name="title_activity_practical6_receiver">Practical6Receiver</string>
+    <string name="no_message_received">No Message Received!</string>
+
 </resources>

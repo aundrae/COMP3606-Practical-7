@@ -17,6 +17,10 @@ public class Calculation extends AppCompatActivity {
     TextView total;
     String s="";
     private int SMS_PERMISSION=1;
+
+    //Update to number desired
+
+    private String phoneNumber="5556";
     private SmsManager manager=SmsManager.getDefault();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +61,7 @@ public class Calculation extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Pizza Ordered", Toast.LENGTH_SHORT).show();
         try{
 
-            manager.sendTextMessage("6846142", null, s, null,
+            manager.sendTextMessage(phoneNumber, null, s, null,
                     null);
         }catch (Exception e){
 

@@ -50,10 +50,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),PizzaScreen3Activity.class));
             }
             if(view == p6_s){
-
+                Intent intent=new Intent(getApplicationContext(),Calculation.class);
+                intent.putExtra("crust",4);
+                intent.putExtra("drinks",3);
+                startActivity(intent);
             }
             if(view == p6_r){
-
+                startActivity(new Intent(getApplicationContext(),Practical6Receiver.class));
             }
         }
     }

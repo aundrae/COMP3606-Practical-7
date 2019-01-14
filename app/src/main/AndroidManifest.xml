@@ -44,9 +44,18 @@
         <activity
             android:name=".Practical4"
             android:label="@string/title_activity_practical4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".IntentScreen" />
+        <activity android:name=".PizzaScreen3Activity" />
+        <activity
+            android:name=".Practical6Receiver"
+            android:label="@string/title_activity_practical6_receiver"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".IntentScreen"/>
-        <activity android:name=".PizzaScreen3Activity"/>
+        <receiver android:name=".SmsReceiver">
+            <intent-filter android:priority="9999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
