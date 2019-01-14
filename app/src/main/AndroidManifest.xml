@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.justi.practical7">
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +21,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Practical1"
+            android:label="@string/title_activity_practical1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Practical2"
+            android:label="@string/title_activity_practical2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Practical3"
+            android:label="@string/title_activity_practical3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectPizza"
+            android:label="@string/title_activity_select_pizza" />
+        <activity
+            android:name=".DetailsPage"
+            android:label="@string/title_activity_details_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Calculation" />
+        <activity
+            android:name=".Practical4"
+            android:label="@string/title_activity_practical4"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".IntentScreen"/>
     </application>
 
 </manifest>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPizza"
+    android:background="#bbb">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headers"
+        android:text="Select Size of Pizza"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/size"/>
+
+    <Spinner
+        android:layout_below="@id/size"
+        android:id="@+id/spinner_sizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sizes"
+        android:layout_marginBottom="20dp"
+        android:prompt="@string/size_prompt" />
+
+    <TextView
+        android:layout_below="@+id/spinner_sizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headers"
+        android:text="Select Type of Pizza"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/radio_title"/>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_title"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/MeatLovers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meat Lovers Pizza" />
+
+        <RadioButton
+            android:id="@+id/vegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian" />
+
+        <RadioButton
+            android:id="@+id/hawaiian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hawaiian" />
+
+    </RadioGroup>
+    <TextView
+        android:layout_below="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headers"
+        android:text="Select Amount Of Drinks"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/drinks_title"/>
+
+    <ImageButton
+        android:layout_below="@id/drinks_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/decrease"
+        android:src="@drawable/baseline_navigate_before_black_18dp"/>
+    <ImageButton
+        android:id="@+id/increase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drinks_title"
+        android:src="@drawable/baseline_navigate_before_black_18dp"
+        android:layout_alignParentRight="true"
+        android:scaleX="-1"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinks_title"
+        android:text="0"
+        android:id="@+id/drinks_count"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/increase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headers"
+        android:text="Stuffed Crust?"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/stuffedcrust_title"/>
+
+    <Switch
+        android:id="@+id/crust"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/stuffedcrust_title" />
+
+    <ImageButton
+        android:id="@+id/details_page"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/crust"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_local_pizza_black_24dp"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>

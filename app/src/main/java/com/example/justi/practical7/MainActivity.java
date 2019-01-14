@@ -1,5 +1,6 @@
 package com.example.justi.practical7;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,13 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
             if(view == p2){
-
+                startActivity(new Intent(getApplicationContext(),Practical2.class));
             }
             if(view == p3){
-
+                startActivity(new Intent(getApplicationContext(),Practical3.class));
             }
             if(view == p4){
-
+                startActivity(new Intent(getApplicationContext(),Practical4.class));
             }
             if(view == p5){
 
