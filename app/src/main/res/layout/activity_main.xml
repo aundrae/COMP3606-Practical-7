@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMP 3606 Practivals 1 - 6"
+        android:textStyle="bold|italic"
+        android:textSize="50px"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/header"/>
+
+    <Button
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practical 1"
+        android:id="@+id/p1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p1"
+        android:text="Practical 2"
+        android:id="@+id/p2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2"
+        android:text="Practical 3"
+        android:id="@+id/p3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p3"
+        android:text="Practical 4"
+        android:id="@+id/p4"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p4"
+        android:text="Practical 5"
+        android:id="@+id/p5"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p5"
+        android:text="Practical 6 (Sender)"
+        android:id="@+id/p6_S"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p6_S"
+        android:text="Practical 6 (Receiver)"
+        android:id="@+id/p6_R"/>
+
+</RelativeLayout>
