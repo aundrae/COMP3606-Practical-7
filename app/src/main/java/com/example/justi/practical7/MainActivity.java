@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Practical4.class));
             }
             if(view == p5){
-
+                startActivity(new Intent(getApplicationContext(),PizzaScreen3Activity.class));
             }
             if(view == p6_s){
 
