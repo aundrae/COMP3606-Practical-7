@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if(view == p1){
-
+                startActivity(new Intent(getApplicationContext(),Practical1.class));
             }
             if(view == p2){
                 startActivity(new Intent(getApplicationContext(),Practical2.class));

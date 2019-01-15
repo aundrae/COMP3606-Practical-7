@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +7,229 @@
     tools:context=".Practical1"
     tools:showIn="@layout/activity_practical1">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+
+        android:id="@+id/textView1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+
+        android:text="@string/hello_world" />
+
+
+    <EditText
+
+        android:id="@+id/editText2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editText1"
+
+        android:layout_alignLeft="@+id/editText1"
+
+        android:layout_marginTop="20dp"
+
+        android:layout_toLeftOf="@+id/EditText01"
+
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+
+        android:text="Price/bag:" />
+
+
+    <EditText
+
+        android:id="@+id/editText1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView1"
+
+        android:layout_marginTop="31dp"
+
+        android:layout_toLeftOf="@+id/textView1"
+
+        android:ems="10"
+
+        android:inputType="number"
+
+        android:text="No of bags:" />
+
+
+    <EditText
+
+        android:id="@+id/editText3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button1"
+
+        android:layout_alignLeft="@+id/editText1"
+
+        android:layout_toLeftOf="@+id/button1"
+
+        android:editable="true"
+
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+
+        android:text="Total Cost:">
+
+
+        <requestFocus />
+
+    </EditText>
+
+
+    <Button
+
+        android:id="@+id/button1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="Calculate" />
+
+
+    <EditText
+
+        android:id="@+id/EditText01"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView1"
+
+        android:layout_alignLeft="@+id/textView1"
+
+        android:layout_marginTop="31dp"
+
+        android:ems="10"
+
+        android:inputType="number" />
+
+
+    <EditText
+
+        android:id="@+id/EditText02"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/editText2"
+
+        android:layout_alignBottom="@+id/editText2"
+
+        android:layout_alignParentRight="true"
+
+        android:ems="10"
+        android:editable="false"/>
+
+
+    <EditText
+
+        android:id="@+id/EditText03"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button1"
+
+        android:layout_alignLeft="@+id/button1"
+
+        android:layout_marginLeft="19dp"
+
+        android:editable="false"
+
+        android:ems="10"
+
+        android:inputType="numberDecimal" />
+
+
+    <CheckBox
+
+        android:id="@+id/checkBox"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_toEndOf="@+id/EditText03"
+
+        android:layout_toRightOf="@+id/EditText03"
+
+        android:text="VAT" />
+
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+
+        android:layout_above="@+id/textView1"
+
+        android:layout_below="@+id/checkBox"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_gravity="center"
+
+        android:layout_toStartOf="@+id/EditText02"
+
+        android:layout_toLeftOf="@+id/EditText02">
+
+
+        <RadioButton
+
+            android:id="@+id/radioButton"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Red" />
+
+
+        <RadioButton
+
+            android:id="@+id/radioButton2"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Green" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
